@@ -1,5 +1,6 @@
 const express = require('express')
 const app = express()
+const morgan = require("morgan");
 
 let persons = [
     {
@@ -26,9 +27,7 @@ let persons = [
 
 app.use(express.json())
 
-app.get('/', (req, res) => {
-    res.send('<h1>Hello World!</h1>')
-})
+app.use(morgan("tiny"))
 
 app.get('/info', (req, res) => {
     amountOfPeople = persons.length
