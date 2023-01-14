@@ -1,6 +1,6 @@
-# fly.toml file generated for restless-leaf-7397 on 2023-01-14T00:22:20+02:00
+# fly.toml file generated for icy-darkness-6412 on 2023-01-14T00:46:46+02:00
 
-app = "restless-leaf-7397"
+app = "icy-darkness-6412"
 kill_signal = "SIGINT"
 kill_timeout = 5
 processes = []
